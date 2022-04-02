@@ -1,0 +1,34 @@
+{
+    "skipTerminateQuickPick": true,
+    "skipSwitchToOutput": false,
+    "skipErrorMessage": true,
+    "commands": [
+        {
+            "text": "$(arrow-up) Gerrit Push",
+            "tooltip": "Run command: \"git push origin HEAD:refs/for/master\"",
+            "color": "yellow",
+            "command": "git push origin HEAD:refs/for/master; echo done!",
+            "alignment": "left",
+            "skipTerminateQuickPick": false,
+            "priority": 0
+        },
+        {
+            "text": "$(arrow-down) Gerrit Fetch",
+            "tooltip": "Run command: \"git fetch\"",
+            "color": "yellow",
+            "command": "git fetch; echo done!",
+            "alignment": "left",
+            "skipTerminateQuickPick": false,
+            "priority": 0
+        },
+        {
+            "text": "$(git-commit) Git Amend Commit",
+            "tooltip": "Run command: \"git commit --amend --no-edit\"",
+            "color": "yellow",
+            "command": "git commit --amend --no-edit; echo done!",
+            "alignment": "left",
+            "skipTerminateQuickPick": false,
+            "priority": 0
+        }
+    ]
+}
